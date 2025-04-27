@@ -114,7 +114,9 @@ nav a{
     transition: color 0.3s ease;
 }
 nav a:hover{
-    color: var(--blue);
+    background-color: var(--blue);
+    color: var(--black);
+    padding: 30px
 }
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 #hero {
@@ -126,6 +128,45 @@ nav a:hover{
     padding: 1rem;
     overflow: hidden;
 }
+#hero h2{
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+#hero p{
+    font-size: 1.125rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+#hero .push{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+#hero .push:hover{
+    background-color: var(--blue);
+    color: var(--black);
+}
+#about {
+    background: var(--white);
+    color: var(--charcoal);
+    padding: 4rem 0 2rem;
+    text-align: center;
+  }
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  #about p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
