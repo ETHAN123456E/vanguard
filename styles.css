@@ -35,9 +35,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: inter;
+    font-family: Inter;
     background-color: var(--black);
-    color: var(--charcoal);
+    color: var(--white);
 }
 ol, ul {
     list-style: none;
@@ -76,22 +76,28 @@ table {
     margin: 0 auto;
 }
 .logo-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--black);
+    border-bottom: 4px solid var(--blue);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 1rem 0;
 }
 .logo-nav h1{
-    position: relative;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--blue);
+    margin-left: 1rem;
 }
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
 .logo-nav h1::before{
     content: "";
     position: absolute;
     top: 50%;
-    left: -3.75rem;
+    left: -2.75rem;
     transform: translateY(-50%);
     width: 3.75rem;
     height: 3.75rem;
@@ -104,7 +110,7 @@ nav ul{
 nav a{
     text-decoration: none;
     font-weight: 600;
-    color: var(--charcoal);
+    color: var(--blue);
     transition: color 0.3s ease;
 }
 nav a:hover{
@@ -119,17 +125,6 @@ nav a:hover{
     text-align: center;
     padding: 1rem;
     overflow: hidden;
-}
-
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
-
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
