@@ -1,4 +1,4 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Ethan Consolini */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"
@@ -35,6 +35,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    font-family: inter;
+    background-color: var(--white);
+    color: var(--charcoal);
 }
 ol, ul {
     list-style: none;
