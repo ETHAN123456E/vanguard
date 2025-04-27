@@ -75,7 +75,41 @@ table {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.logo-nav h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--charcoal);
+}
+.logo-nav h1::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3.75rem;
+    transform: translateY(-50%);
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url(images/vanguard-logo.svg) no-repeat center/contain;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--charcoal);
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: var(--blue);
+}
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
