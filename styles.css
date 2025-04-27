@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: inter;
-    background-color: var(--white);
+    background-color: var(--black);
     color: var(--charcoal);
 }
 ol, ul {
@@ -85,7 +85,7 @@ table {
     position: relative;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--charcoal);
+    color: var(--blue);
 }
 .logo-nav h1::before{
     content: "";
