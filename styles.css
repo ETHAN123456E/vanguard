@@ -90,14 +90,14 @@ table {
     font-size: 2rem;
     font-weight: 600;
     color: var(--blue);
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 .logo-nav h1::before{
     content: "";
     position: absolute;
     top: 50%;
-    left: -2.75rem;
+    left: -3.75rem;
     transform: translateY(-50%);
     width: 3.75rem;
     height: 3.75rem;
