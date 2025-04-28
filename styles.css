@@ -167,6 +167,88 @@ nav a:hover{
     max-width: 800px;
     margin: 0 auto;
   }
+  #offerings {
+    background: var(--white);
+    color: var(--charcoal);
+    padding: 2rem 0 4rem;
+  }
+  #offerings h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .offer-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  }
+  .offer-card {
+    background: var(--blue);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: padding 0.5s ease;
+  }
+  .offer-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  .offer-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .offer-card:hover{
+    padding: 10px;
+  }
+  #results {
+    background: var(--blue);
+    color: var(--white);
+    padding: 4rem 0;
+  }
+  #results h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  #results p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .results {
+    display: grid;
+    gap: 2rem;
+  }
+  .results-table table {
+    width: 100%;
+    background: var(--black);
+  }
+  .results-table th,
+  .results-table td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  .results-table th {
+    background: var(--black);
+    color: var(--white);
+  }
+  .results-table td {
+    color: var(--white);
+  }
+  .results-table tr:nth-child(odd) {
+    background: var(--charcoal);
+  }
+  .results-table tr:nth-child(even) {
+    background: var(--black);
+  }
+  
+  /* GROWTH BAR CHART */
+  .results-chart {
+    position: relative;
+  }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -186,7 +268,7 @@ nav a:hover{
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 0.5s ease;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -211,8 +293,92 @@ nav a:hover{
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
+    transition: height 0.5s ease;
 }
-
+@keyframes titleStepUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+h1, h2, h3 {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: titleStepUp 0.8s ease-in-out forwards;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+ #contact {
+    background: var(--black);
+    color: var(--white);
+    padding: 4rem 0;
+  }
+  #contact h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  #contact p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .form-group input, .form-group textarea {
+    padding: 0.75rem;
+    border: 2px solid var(--blue);
+    border-radius: 0.25rem;
+    background: var(--white);
+    color: var(--black);
+    font-family: inherit;
+  }
+  .form-group.full-width {
+    /* textarea sits in left column */
+    grid-column: 1 / 2;
+  }
+  .contact-form button {
+    grid-column: 2 / 3;
+    padding: 0.75rem;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .contact-form button:hover {
+    background: var(--red);
+  }
+  .footer {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .footer a {
+    color: var(--blue);
+    text-decoration: none;
+  }
 
 /* MEDIA QUERIES (MEDIUM) */ 
 
